@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Navigation Bar */
+header{
+    background-color: #FDC714;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 3.75rem 0.625rem 0.625rem;
+    /* position: sticky;
+    top: 0;
+    z-index: 1; */
+}
+
+header img {
+    width: 18.5rem;
+    height: 7.625rem;
+    cursor: pointer;
+}
+
+.menu_bar {
+    background: #FDC714;
+    text-align: center;
+}
+
+.menu_bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #5361AB;
+}
+
+.menu_bar ul li{
+    padding: 0.938rem;
+    position: relative;
+}
+
+.menu_bar ul li a{
+    text-decoration: none;
+    color: #5361AB;
+    font-size: 1.25rem;
+}
+
+.menu_bar ul li a:hover{
+    color: #545454;
+}
+
+.fa-solid{
+    font-size: 0.75rem;
+}
+
+.sub_menu_1{
+    display: none;
+}
+
+.menu_bar ul li:hover .sub_menu_1{
+    display: block;
+    position: absolute;
+    background: #5361AB;
+    color: #FDC714;
+    box-shadow: -0.188rem -0.188rem 0.938rem rgba(0,0,0,0.5);
+    margin-left: -0.938rem;
+    margin-top: 0.938rem;
+    text-align: left;
+}
+
+.menu_bar ul li:hover .sub_menu_1 ul{
+    display: block;
+    width: 15.625rem;
+}
+
+.menu_bar ul li:hover .sub_menu_1 ul li{
+    border-bottom: 0.063rem solid #6EC1E4;
+}
+
+.menu_bar ul li:hover .sub_menu_1 ul li a{
+    background: #5361AB;
+    color: #FDC714;
+    font-size: 0.875rem;
+    border-radius:0;
+}
+
+.menu_bar ul li:hover .sub_menu_1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu_bar ul li:hover .sub_menu_1 ul li a:hover{
+    color: #fff;
+}
+
+.fa-angle-right{
+    padding-top: 0.313rem;
+    float: right;
+}
+
+.sub_menu_2{
+    display: none;
+}
+
+.hover_me:hover .sub_menu_2{
+    position: absolute;
+    display: block;
+    margin-top: -2.125rem;
+    margin-left: 14.688rem;
+    background: #5361AB;
+    text-align: left;
+    box-shadow: -0.188rem -0.188rem 0.938rem rgba(0,0,0,0.5);
+}
+
+.signin{
+    text-decoration: none;
+}
+
+.enquiry_btn {
+    font-size: 1.25rem;
+    font-weight: 600;
+    fill: #FDC714;
+    color: #FDC714;
+    background-color: #5361AB;
+    border-radius: 1.25rem;
+    padding: 0.938rem 1.25rem;
+    border: none;
+    cursor: pointer;
+}
+
+.enquiry_btn:hover{
+    background-color: #fff;
+    color: #5361AB;
+}
+
+/* course detail section */
+
+.course_detail{
+    background: #F7F9FB;
+    padding: 3.125rem 0;
+    color: #334155;
+    text-align: center;
+}
+
+.divider{
+    color: #5361AB;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 0.313rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.divider::before, .divider::after {
+  content: '';
+  padding: 0.125rem;
+  background-color: #D7D7D7;
+  margin: 0 0.938rem;
+  width: 2.5rem;
+}
+
+.course_title{
+    color: #5361AB;
+    margin-bottom: 1.563rem;
+}
+
+.course_detail p{
+    width: 56.75rem;
+    margin: 0.625rem auto;
+    line-height: 2.5rem;
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: #545454;
+}
+
+.dotted-border {
+    text-align: center;
+    font-size: 1.563rem;
+    font-weight: bolder;
+    letter-spacing: 0.188rem;
+    color: #FDC714;
+}
+
+/* Session and Fee detail */
+.session_detail, .fee_detail{
+    display: flex;
+    align-items: center;
+    padding: 0.938rem 0;
+    max-width: 71.25rem;
+    margin: auto;
+    min-height: 15.625rem;
+}
+
+.session_detail h2, .fee_detail h2{
+    padding: 0 6.25rem;
+    color: #5361AB;
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 1.2em;
+    width: 31.25rem;
+}
+
+.fee_detail h2{
+    width: 26.875rem;
+}
+
+.session_detail .vertical_divider{
+    border-left: 0.125rem solid #FDC714;
+    min-height: 17.5rem;
+}
+
+.fee_detail .vertical_divider{
+    border-left: 0.125rem solid #FDC714;
+    min-height: 9.375rem;
+}
+
+.session_detail p, .fee_detail p{
+    padding-left: 1.875rem;
+    margin-bottom: 1.6em;
+    width: 56.75rem;
+    line-height: 2.5rem;
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: #545454;
+}
+
+.fee_detail p{
+    width: 42.813rem;
+}
+
+/* Course Content */
+.course_content{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 26.563rem;
+}
+
+.course_content h2{
+    color: #5361AB;
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 1.2em;
+    margin-bottom: 1.25rem;
+}
+
+.wrap-collabsible{
+    box-shadow: 0 0 1.875rem 0 rgba(0,0,0,0.12);
+    margin-bottom: 1.25rem;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle{
+    display: block;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: left;
+    color: #5361AB;
+    background: #FDC714;
+    cursor: pointer;
+    border-width: 0;
+    border-color: rgba(191, 191, 191, 0);
+    padding: 1.875rem;
+}
+
+.lbl-toggle span{
+    text-decoration: underline;
+}
+
+.collapsible-content .content-inner {
+    background: #5361AB;
+    padding: 1.875rem 1.875rem 2.5rem;
+    color: #FDC714;
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: normal;
+    line-height: 2rem;
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 100vh;
+}
+
+.lbl-toggle::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f103';
+    font-size: 1rem;
+}
+
+.toggle:checked + .lbl-toggle::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f106';
+    font-size: 1rem;
+}
+
+.enquiry_section{
+    padding: 3.125rem 0;
+    text-align: center;
+}
+
+.enquiry_section p{
+    color: #545454;
+    margin-bottom: 3.125rem;
+    font-size: 1.563rem;
+    font-weight: 400;
+}
+
+.enquiry_section .enquiry_btn:hover{
+    color: #5361AB;
+    background-color: #FDC714;
+    padding: 1.125rem 1.563rem;
+}
+
+footer{
+    background: #FDC714;
+    padding: 1.25rem 15%;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact_address p{
+    font-size: 1.063rem;
+    color: #545454;
+    line-height: 1.688rem;
+}
+
+.contact_address h3{
+    font-size: 1.25rem;
+    color: #5361AB;
+    font-weight: 400;
+}
+
+.policy{
+    line-height: 1.8rem;
+    margin-top: -1.438rem;
+}
+
+.policy a{
+    text-decoration: none;
+    color: #163a70;
+    font-size: 1.063rem;
+}
+
+.social_icons ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.social_icons ul li{
+    width: 4.063rem;
+    height: 3.438rem;
+    margin: 0 0.313rem;
+}
+
+.social_icons ul li a{
+    color: #5361AB;
+}
+
+.fa-brands{
+    font-size: 1.875rem;
+}
+
+.copyright_content{
+    margin: 1.25rem 0;
+    color: #5361AB;
+    font-size: 0.938rem;
+    line-height: 1.688rem;
+}
+
+.fa-whatsapp {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.fa-phone{
+    font-size: 1.563rem;
+    color: #FDC714;
+}
+
+.chat_icon{
+    background: #37c36ecc;
+    width: 3.75rem;
+    height: 3.75rem;
+    padding-top: 0.625rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0.625rem;
+    left: 0.625rem;
+}
+
+.phone_icon{
+    background: #5361AB;
+    width: 3.75rem;
+    height: 3.75rem;
+    padding-top: 1.063rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0.625rem;
+    right: 0.625rem;
+}
